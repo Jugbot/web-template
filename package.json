@@ -12,7 +12,7 @@
     "_prettier": "prettier --check",
     "format:check": "pnpm _prettier . && pnpm _eslint .",
     "format": "pnpm _prettier --write . && pnpm _eslint --fix .",
-    "types:check": "tsc --noEmit",
+    "types:check": "tsc -b",
     "check": "pnpm types:check && pnpm format:check",
     "prepare": "husky"
   },
