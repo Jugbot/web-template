@@ -9,8 +9,7 @@
     "check-types": "tsc -b",
     "preview": "vite preview",
     "test": "vitest run",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@radix-ui/themes": "catalog:",
@@ -19,10 +18,10 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@eslint/js": "catalog:",
     "@storybook/addon-essentials": "catalog:",
     "@storybook/addon-interactions": "catalog:",
     "@storybook/addon-links": "catalog:",
+    "@storybook/addon-themes": "catalog:",
     "@storybook/blocks": "catalog:",
     "@storybook/react": "catalog:",
     "@storybook/react-vite": "catalog:",
@@ -32,19 +31,9 @@
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react-swc": "catalog:",
-    "eslint": "catalog:",
-    "eslint-config-prettier": "catalog:",
-    "eslint-plugin-react-hooks": "catalog:",
-    "eslint-plugin-react-refresh": "catalog:",
-    "eslint-plugin-storybook": "catalog:",
-    "globals": "catalog:",
-    "husky": "catalog:",
     "jsdom": "catalog:",
-    "lint-staged": "catalog:",
-    "prettier": "catalog:",
     "storybook": "catalog:",
     "typescript": "catalog:",
-    "typescript-eslint": "catalog:",
     "vite": "catalog:",
     "vitest": "catalog:"
   }

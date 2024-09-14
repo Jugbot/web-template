@@ -3,7 +3,6 @@ import globals from "globals";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
-import storybook from "eslint-plugin-storybook";
 import eslintConfigPrettier from "eslint-config-prettier";
 import turbo from "eslint-plugin-turbo";
 
@@ -26,7 +25,6 @@ export default tseslint.config(
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      storybook,
       turbo,
     },
     rules: {
