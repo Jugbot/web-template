@@ -7,12 +7,12 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "test": "turbo test",
+    "format": "pnpm _prettier --write . && pnpm _eslint --fix .",
     "_eslint": "eslint --max-warnings 0",
     "_prettier": "prettier --check",
-    "format:check": "pnpm _prettier . && pnpm _eslint .",
-    "format": "pnpm _prettier --write . && pnpm _eslint --fix .",
+    "check-format": "pnpm _prettier . && pnpm _eslint .",
     "check-types": "turbo check-types",
-    "check": "pnpm check-types && pnpm format:check",
+    "check": "pnpm check-types && pnpm check-format",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -24,6 +24,7 @@
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
     "eslint-plugin-storybook": "catalog:",
+    "eslint-plugin-turbo": "^2.1.2",
     "globals": "catalog:",
     "husky": "catalog:",
     "lint-staged": "catalog:",
