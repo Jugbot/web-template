@@ -1,7 +1,7 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from '@storybook/react'
 
-import "../src/reset.css";
-import "@radix-ui/themes/styles.css";
+import '../src/reset.css'
+import '@radix-ui/themes/styles.css'
 
 const preview: Preview = {
   parameters: {
@@ -12,6 +12,6 @@ const preview: Preview = {
       },
     },
   },
-};
+}
 
-export default preview;
+export default preview

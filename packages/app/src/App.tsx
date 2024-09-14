@@ -1,6 +1,6 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import {
   Button,
   Card,
@@ -11,18 +11,18 @@ import {
   Flex,
   ThemePanel,
   Code,
-} from "@radix-ui/themes";
-import { styled } from "@stitches/react";
+} from '@radix-ui/themes'
+import { styled } from '@stitches/react'
 
-const Logo = styled("img", {
-  height: "6em",
-  padding: "1.5em",
-  willChange: "filter",
-  transition: "filter 300ms",
-});
+const Logo = styled('img', {
+  height: '6em',
+  padding: '1.5em',
+  willChange: 'filter',
+  transition: 'filter 300ms',
+})
 
 export function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <Theme>
@@ -45,7 +45,11 @@ export function App() {
         <Heading as="h1">Vite + React</Heading>
         <Card variant="classic" size="3">
           <Flex align="center" direction="column" gap="2">
-            <Button onClick={() => setCount((count) => count + 1)}>
+            <Button
+              onClick={() => {
+                setCount((count) => count + 1)
+              }}
+            >
               count is {count}
             </Button>
             <Text as="p">
@@ -59,5 +63,5 @@ export function App() {
         <ThemePanel />
       </Flex>
     </Theme>
-  );
+  )
 }
