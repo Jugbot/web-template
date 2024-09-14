@@ -1,5 +1,8 @@
 import type { Preview } from "@storybook/react";
 
+import "../src/reset.css";
+import "@radix-ui/themes/styles.css";
+
 const preview: Preview = {
   parameters: {
     controls: {
