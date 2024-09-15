@@ -15,16 +15,16 @@
     }
   },
   "scripts": {
-    "dev": "tsc",
-    "build": "tsc",
-    "push": "dotenv drizzle-kit push",
-    "studio": "dotenv drizzle-kit studio",
-    "check-types": "tsc"
+    "dev": "docker-compose up",
+    "push": "pnpm with-env drizzle-kit push",
+    "studio": "pnpm with-env drizzle-kit studio",
+    "check-types": "tsc",
+    "with-env": "dotenv -c development --"
   },
   "dependencies": {
-    "@vercel/postgres": "^0.9.0",
     "drizzle-orm": "^0.33.0",
     "drizzle-zod": "^0.5.1",
+    "postgres": "^3.4.4",
     "zod": "catalog:"
   },
   "devDependencies": {
