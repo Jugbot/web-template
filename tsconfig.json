@@ -1,10 +1,4 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "nodenext",
-    "module": "nodenext",
-    "allowJs": true,
-    "checkJs": true,
-    "noEmit": true
-  },
+  "extends": "./configs/tsconfig/base.json",
   "include": ["eslint.config.js"]
 }
