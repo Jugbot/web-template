@@ -51,6 +51,8 @@ export const createTRPCContext = () => {
   }
 }
 
+export const transformer = superjson
+
 /**
  * 2. INITIALIZATION
  *
@@ -58,7 +60,7 @@ export const createTRPCContext = () => {
  * transformer
  */
 const t = initTRPC.context<typeof createTRPCContext>().create({
-  transformer: superjson,
+  transformer,
   errorFormatter: ({ shape, error }) => ({
     ...shape,
     data: {

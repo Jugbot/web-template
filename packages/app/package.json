@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "check-types": "tsc",
+    "check-types": "tsc -b",
     "preview": "vite preview",
     "test": "vitest run",
     "storybook": "storybook dev -p 6006"

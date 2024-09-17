@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { transformer } from '@acme/api'
 import { Theme } from '@radix-ui/themes'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { trpc } from './trpc'
 import { httpBatchLink } from '@trpc/react-query'
+import { useState } from 'react'
 import { Main } from './pages/Main'
+import { trpc } from './trpc'
 
 export function App() {
   const [queryClient] = useState(() => new QueryClient())
@@ -12,6 +13,7 @@ export function App() {
       links: [
         httpBatchLink({
           url: 'http://localhost:3000',
+          transformer,
         }),
       ],
     }),
