@@ -27,6 +27,7 @@ export const postRouter = {
         where: eq(Post.id, input.id),
       })
     }),
+  ping: publicProcedure.query(() => 'pong'),
 
   // create: protectedProcedure
   //   .input(CreatePostSchema)

@@ -22,6 +22,7 @@
     "with-env": "dotenv -c development --"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
     "drizzle-zod": "^0.5.1",
     "postgres": "^3.4.4",

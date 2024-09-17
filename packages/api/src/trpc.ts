@@ -37,20 +37,17 @@ import { db } from '@acme/db/client'
  *
  * @see https://trpc.io/docs/server/context
  */
-export const createTRPCContext = (opts: {
-  headers: Headers
-  // session: Session | null;
-}) => {
-  const authToken = opts.headers.get('Authorization') ?? null
+export const createTRPCContext = () => {
+  // const authToken = opts.headers.get('Authorization') ?? null
   // const session = await isomorphicGetSession(opts.headers);
 
   // const source = opts.headers.get("x-trpc-source") ?? "unknown";
   // console.log(">>> tRPC Request from", source, "by", session?.user);
 
   return {
-    // session,
     db,
-    token: authToken,
+    // session,
+    // token: authToken,
   }
 }
 

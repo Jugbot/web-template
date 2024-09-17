@@ -12,6 +12,7 @@
     "dev": {
       "inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
       "persistent": true,
+      "interactive": false,
       "cache": false
     },
     "test": {}
