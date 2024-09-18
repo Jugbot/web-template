@@ -1,12 +1,11 @@
-import type { TRPCRouterRecord } from '@trpc/server'
 import { z } from 'zod'
 
 import { desc, eq } from '@acme/db'
 import { Post } from '@acme/db/schema'
 
-import { publicProcedure } from '../trpc'
+import { createTRPCRouter, publicProcedure } from '../trpc'
 
-export const postRouter = {
+export const postRouter = createTRPCRouter({
   all: publicProcedure.query(({ ctx }) => {
     // return ctx.db.select().from(schema.post).orderBy(desc(schema.post.id));
     return ctx.db.query.Post.findMany({
@@ -27,7 +26,6 @@ export const postRouter = {
         where: eq(Post.id, input.id),
       })
     }),
-  ping: publicProcedure.query(() => 'pong'),
 
   // create: protectedProcedure
   //   .input(CreatePostSchema)
@@ -38,4 +36,4 @@ export const postRouter = {
   // delete: protectedProcedure.input(z.string()).mutation(({ ctx, input }) => {
   //   return ctx.db.delete(Post).where(eq(Post.id, input));
   // }),
-} satisfies TRPCRouterRecord
+})

@@ -7,8 +7,8 @@
  * The pieces you will need to use are documented accordingly near the end
  */
 import { initTRPC } from '@trpc/server'
-import superjson from 'superjson'
 import { ZodError } from 'zod'
+import superjson from 'superjson'
 
 // import type { Session } from "@acme/auth";
 // import { auth, validateToken } from "@acme/auth";
@@ -51,8 +51,6 @@ export const createTRPCContext = () => {
   }
 }
 
-export const transformer = superjson
-
 /**
  * 2. INITIALIZATION
  *
@@ -60,7 +58,7 @@ export const transformer = superjson
  * transformer
  */
 const t = initTRPC.context<typeof createTRPCContext>().create({
-  transformer,
+  transformer: superjson,
   errorFormatter: ({ shape, error }) => ({
     ...shape,
     data: {

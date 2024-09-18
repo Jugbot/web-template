@@ -14,11 +14,11 @@
   "dependencies": {
     "@radix-ui/themes": "catalog:",
     "@stitches/react": "catalog:",
-    "@tanstack/react-query": "^5.56.2",
+    "@tanstack/react-query": "catalog:",
     "@trpc/client": "catalog:",
     "@trpc/react-query": "catalog:",
-    "react-dom": "catalog:",
-    "react": "catalog:"
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
     "@acme/api": "workspace:*",
@@ -33,13 +33,21 @@
     "@storybook/test": "catalog:",
     "@testing-library/dom": "catalog:",
     "@testing-library/react": "catalog:",
+    "@trpc/server": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react-swc": "catalog:",
     "jsdom": "catalog:",
+    "msw": "^1.3.4",
+    "msw-storybook-addon": "^1.10.0",
+    "msw-trpc": "^1.3.4",
     "storybook": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",
-    "vitest": "catalog:"
+    "vitest": "catalog:",
+    "superjson": "catalog:"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

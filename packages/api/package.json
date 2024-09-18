@@ -16,7 +16,7 @@
     "@acme/db": "workspace:*",
     "@trpc/server": "catalog:",
     "cors": "^2.8.5",
-    "superjson": "2.2.1",
+    "superjson": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {

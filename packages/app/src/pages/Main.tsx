@@ -21,11 +21,9 @@ const Logo = styled('img', {
 })
 
 export const Main = () => {
-  const pong = trpc.post.ping.useQuery()
+  const pong = trpc.ping.ping.useQuery()
 
-  const pongDisplay = pong.isFetching
-    ? 'loading...'
-    : (pong.data as unknown as { json: string } | undefined)?.json
+  const pongDisplay = pong.isFetching ? 'loading...' : pong.data
 
   return (
     <Flex
