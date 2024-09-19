@@ -1,10 +1,5 @@
 import type { Config } from 'drizzle-kit'
-
-if (!process.env.POSTGRES_URL) {
-  throw new Error('Missing POSTGRES_URL')
-}
-
-const connectionUrl = process.env.POSTGRES_URL
+import { connectionUrl } from './src/config'
 
 export default {
   schema: './src/schema.ts',
