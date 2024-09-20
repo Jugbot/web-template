@@ -1,4 +1,4 @@
 {
   "extends": "@acme/tsconfig/node.json",
-  "include": ["vite.config.ts"]
+  "include": ["src", "drizzle.config.ts"]
 }
