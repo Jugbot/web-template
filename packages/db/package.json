@@ -16,13 +16,12 @@
   },
   "scripts": {
     "dev": "docker-compose up",
-    "push": "pnpm with-env drizzle-kit push",
-    "studio": "pnpm with-env drizzle-kit studio",
-    "check-types": "tsc",
-    "with-env": "dotenv -c development --"
+    "push": "drizzle-kit push",
+    "studio": "drizzle-kit studio",
+    "check-types": "tsc"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "catalog:",
     "drizzle-orm": "^0.33.0",
     "drizzle-zod": "^0.5.1",
     "postgres": "^3.4.4",
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
-    "dotenv-cli": "^7.4.2",
     "drizzle-kit": "^0.24.2",
     "eslint": "catalog:",
     "prettier": "catalog:",

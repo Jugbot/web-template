@@ -11,7 +11,7 @@ export const QueryDecorator: Decorator = (Story) => {
     trpc.createClient({
       links: [
         httpLink({
-          url: 'http://localhost:3000',
+          url: import.meta.env.VITE_API_BASE_URL,
           headers() {
             return {
               'content-type': 'application/json',

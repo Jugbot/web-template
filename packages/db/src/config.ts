@@ -2,11 +2,11 @@ import path from 'path'
 import { config } from 'dotenv'
 import { fileURLToPath } from 'url'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
 
 config({
-  path: path.resolve(__dirname, '../.env.development'),
+  path: path.resolve(dirname, '../.env.development'),
 })
 
 if (!process.env.POSTGRES_URL) {
