@@ -22,14 +22,14 @@
   },
   "dependencies": {
     "dotenv": "catalog:",
-    "drizzle-orm": "^0.33.0",
-    "drizzle-zod": "^0.5.1",
-    "postgres": "^3.4.4",
+    "drizzle-orm": "catalog:",
+    "drizzle-zod": "catalog:",
+    "postgres": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
-    "drizzle-kit": "^0.24.2",
+    "drizzle-kit": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"

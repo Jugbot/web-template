@@ -13,7 +13,8 @@
     "check-format": "pnpm _prettier . && pnpm _eslint .",
     "check-types": "turbo check-types",
     "check": "pnpm check-types && pnpm check-format",
-    "prepare": "husky"
+    "prepare": "husky",
+    "catalog": "pnpx codemod pnpm/catalog"
   },
   "devDependencies": {
     "@eslint/js": "catalog:",

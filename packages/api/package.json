@@ -15,16 +15,16 @@
   "dependencies": {
     "@acme/db": "workspace:*",
     "@trpc/server": "catalog:",
-    "cors": "^2.8.5",
+    "cors": "catalog:",
     "superjson": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@acme/tsconfig": "workspace:*",
-    "@types/cors": "^2.8.17",
+    "@types/cors": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "tsx": "^4.19.1",
+    "tsx": "catalog:",
     "typescript": "catalog:"
   }
 }

@@ -11,5 +11,9 @@ export default defineConfig({
     mockReset: true,
     // vitest does not load .env.development by default
     env: loadEnv('development', process.cwd()),
+    includeSource: ['src/**/*.ts'],
+  },
+  define: {
+    'import.meta.vitest': 'undefined',
   },
 })
